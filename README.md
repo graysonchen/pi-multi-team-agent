@@ -42,23 +42,31 @@
 
 ## Installation
 
-Clone the repo to wherever you like, then register the path in `~/.pi/agent/settings.json`:
-
 ```bash
-git clone https://github.com/graysonchen/pi-multi-team-agent \
-  ~/projects/MyJob/Grayson/pi-multi-team-agent
+git clone https://github.com/graysonchen/pi-multi-team-agent
 ```
 
-`~/.pi/agent/settings.json`:
+**Option A — symlink（推荐）**
+
+pi 自动发现 `~/.pi/agent/extensions/` 下的所有目录：
+
+```bash
+ln -s /path/to/pi-multi-team-agent ~/.pi/agent/extensions/multi-team
+```
+
+**Option B — settings.json**
+
+Clone 到任意路径，在 `~/.pi/agent/settings.json` 里注册：
+
 ```json
 {
   "extensions": [
-    "/Users/grayson/projects/MyJob/Grayson/pi-multi-team-agent"
+    "/path/to/pi-multi-team-agent"
   ]
 }
 ```
 
-Reload pi extensions:
+然后在 pi 里重载：
 ```
 /reload
 ```
