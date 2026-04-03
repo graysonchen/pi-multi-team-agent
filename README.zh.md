@@ -4,6 +4,8 @@
 >
 > 灵感来源：*《多团队智能体编码：超越 Cloud Code 的下一个前沿》*
 
+🌐 [English Documentation](README.md)
+
 ---
 
 ## 架构设计

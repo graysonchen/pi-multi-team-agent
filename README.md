@@ -4,6 +4,8 @@
 >
 > Inspired by: *"Multi-Team Agentic Coding: The Next Frontier Beyond Cloud Code"*
 
+🌐 [中文文档](README.zh.md)
+
 ---
 
 ## Architecture
