@@ -46,9 +46,9 @@
 git clone https://github.com/graysonchen/pi-multi-team-agent
 ```
 
-**Option A — symlink（推荐）**
+**Option A — symlink (recommended)**
 
-pi 自动发现 `~/.pi/agent/extensions/` 下的所有目录：
+pi auto-discovers any directory placed under `~/.pi/agent/extensions/`:
 
 ```bash
 ln -s /path/to/pi-multi-team-agent ~/.pi/agent/extensions/multi-team
@@ -56,7 +56,7 @@ ln -s /path/to/pi-multi-team-agent ~/.pi/agent/extensions/multi-team
 
 **Option B — settings.json**
 
-Clone 到任意路径，在 `~/.pi/agent/settings.json` 里注册：
+Clone anywhere and register the path in `~/.pi/agent/settings.json`:
 
 ```json
 {
@@ -66,7 +66,7 @@ Clone 到任意路径，在 `~/.pi/agent/settings.json` 里注册：
 }
 ```
 
-然后在 pi 里重载：
+Then reload inside pi:
 ```
 /reload
 ```
