@@ -42,12 +42,20 @@
 
 ## Installation
 
-```bash
-# The extension is already in the right place if you cloned here:
-~/.pi/agent/extensions/multi-team/
+Clone the repo to wherever you like, then register the path in `~/.pi/agent/settings.json`:
 
-# Or symlink from your clone:
-ln -s /path/to/pi-multi-team-extension ~/.pi/agent/extensions/multi-team
+```bash
+git clone https://github.com/graysonchen/pi-multi-team-agent \
+  ~/projects/MyJob/Grayson/pi-multi-team-agent
+```
+
+`~/.pi/agent/settings.json`:
+```json
+{
+  "extensions": [
+    "/Users/grayson/projects/MyJob/Grayson/pi-multi-team-agent"
+  ]
+}
 ```
 
 Reload pi extensions:
